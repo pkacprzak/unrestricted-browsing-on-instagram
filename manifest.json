@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Unrestricted Browsing on Instagram",
+  "description": "Allows for unrestricted browsing on Instagram without signing in.",
+  "version": "0.0.3",
+  "author": "Pawel Kacprzak",
+  "browser_action": {
+    "default_icon": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["js/content-script.js"]
+    }
+  ],
+  "icons": {
+    "128": "images/icon-128.png"
+  }
+}
